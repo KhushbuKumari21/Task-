@@ -7,7 +7,7 @@ const db = mysql.createConnection({
   database: "microservices_db"
 });
 
-db.connect(err => {
+db.connect((err) => {
   if (err) throw err;
   console.log("DB Connected");
 });
